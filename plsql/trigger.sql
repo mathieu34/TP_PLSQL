@@ -1,27 +1,3 @@
-/*
-CREATE OR REPLACE TRIGGER trg_update_note_moyenne
-AFTER INSERT OR UPDATE ON RATINGS
-FOR EACH ROW
-DECLARE
-    v_avg   NUMBER;
-    v_count NUMBER;
-BEGIN
-    -- Recalcul de la moyenne et du nombre de notes pour ce livre
-    SELECT AVG(book_rating),
-           COUNT(*)
-    INTO v_avg, v_count
-    FROM RATINGS
-    WHERE isbn = :NEW.isbn;
-
-    -- Mise à jour de la table BOOKS
-    UPDATE BOOKS
-    SET note_moyenne = v_avg,
-        nb_notes     = v_count
-    WHERE isbn = :NEW.isbn;
-END;
-/
-*/
-
 CREATE OR REPLACE TRIGGER trg_update_note_moyenne
 AFTER INSERT OR UPDATE ON RATINGS
 FOR EACH ROW
@@ -64,4 +40,5 @@ BEGIN
     WHERE isbn = :NEW.isbn;
 END;
 /
+
 
