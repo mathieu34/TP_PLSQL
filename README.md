@@ -210,7 +210,7 @@ Ces fonctions sont indépendantes du trigger et calculent des statistiques globa
 
 \- Code complet de la procédure
 
-\- Code des 3 fonctions
+\- Code des 4 fonctions
 
 
 
@@ -247,6 +247,7 @@ Mathieu PONNOU → MCD/Schéma + troncature des tables + tests (Procédure PL/SQ
 Amos CLEGBAZA → Procédure PL/SQL + triggers + README + création du package PL/SQL
 
 Meddy GARCIA → Documentation + statistiques de notation (SQL)
+
 
 
 
