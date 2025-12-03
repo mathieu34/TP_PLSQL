@@ -1,8 +1,3 @@
-SELECT * FROM RATINGS
-WHERE user_id = 73
-  AND isbn = '0195153448';
-  
-
 CREATE OR REPLACE TRIGGER trg_update_note_moyenne
 AFTER INSERT OR UPDATE ON notation
 FOR EACH ROW
@@ -23,4 +18,5 @@ BEGIN
         nb_notes     = v_count
     WHERE isbn = :NEW.isbn;
 END;
+
 /
