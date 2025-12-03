@@ -240,13 +240,14 @@ une bonne maîtrise du SQL Oracle dans VS Code
 
 Il répond parfaitement au cahier des charges demandé.
 
-👥 Travail collaboratif (à remplir selon votre groupe)
+👥 Travail collaboratif 
 
 Mathieu PONNOU → MCD/Schéma + troncature des tables + tests (Procédure PL/SQL et triggers) + création du package PL/SQL + README 
 
 Amos CLEGBAZA → Procédure PL/SQL + triggers + README + création du package PL/SQL
 
 Meddy GARCIA → Documentation + statistiques de notation (SQL)
+
 
 
 
