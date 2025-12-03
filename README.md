@@ -1,4 +1,5 @@
 📘 TP Oracle PL/SQL — Gestion des Notations de Livres
+
 🎯 Objectif du TP
 
 Ce projet implémente un mini-système de gestion de notation de livres en PL/SQL.
@@ -30,19 +31,19 @@ Ce TP répond aux exigences du sujet :
 
 ├── 📁 schema/
 
-│   ├── schema                       → Ton script SQL de création des tables
+│   ├── schema                       → Script SQL de création des tables
 
-│   └── MCD.io1                      → Diagramme MCD (Lucidchart / Draw.io)
+│   └── MCD                          → Diagramme MCD (Looping MCD)
 
 ├── 📁 data/                
 
 │   ├── new_csv.csv                  →  CSV originaux filtrés (Books, Ratings, Users) pour avoir 100 lignes environ
 
-│   ├── Books.xlsx                   → Dataset original
+│   ├── Books.xlsx                   → Dataset 
 
-│   ├── Ratings.xlsx                 → Dataset original
+│   ├── Ratings.xlsx                 → Dataset 
 
-│   ├──  Users.xlsx                   → Dataset original
+│   ├──  Users.xlsx                   → Dataset 
 
 ├── 📁 plsql/
 
@@ -86,6 +87,7 @@ year\_of\_publication	Année
 publisher	Éditeur
 note\_moyenne	Moyenne des notes (gérée par trigger)
 nb\_notes	Nombre total de notes
+
 Table USERS
 
 Représente les usagers du système.
@@ -94,6 +96,7 @@ Colonne	Description
 id\_user (PK)	Identifiant
 location	Localisation
 age	Âge
+
 Table RATINGS
 
 Stocke les notes données par les usagers.
@@ -106,7 +109,7 @@ date\_rating	Date de la notation
 
 Clé primaire composite :
 
-(id\_adherent, isbn)
+(id_user, isbn)
 
 
 
@@ -239,9 +242,15 @@ Il répond parfaitement au cahier des charges demandé.
 
 👥 Travail collaboratif (à remplir selon votre groupe)
 
-Mathieu PONNOU → Schéma + troncature des tables + tests (Procédure PL/SQL et triggers) + création du package PL/SQL + README 
+Mathieu PONNOU → MCD/Schéma + troncature des tables + tests (Procédure PL/SQL et triggers) + création du package PL/SQL + README 
 
 Amos CLEGBAZA → Procédure PL/SQL + triggers + README + création du package PL/SQL
 
 Meddy GARCIA → Documentation + statistiques de notation (SQL)
+
+
+
+
+
+
 
