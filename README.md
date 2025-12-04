@@ -49,7 +49,7 @@ Ce TP répond aux exigences du sujet :
 
 │   ├── procedure.sql                → Procédure `noter\_livre`
 
-│   ├── test\_procedure.sql           → Script de tests procédure
+│   ├── test\_procedure.sql           → Script de test procédure
 
 │   ├── best\_note.sql                → Fonction meilleure note
 
@@ -61,7 +61,7 @@ Ce TP répond aux exigences du sujet :
 
 │   ├── trigger\_note\_moyenne.sql     → Trigger mise à jour automatique
 
-│   ├── test\_trigger.sql               → Trigger mise à jour automatique
+│   ├── test\_trigger.sql               → Script de test du trigger 
 
 │   ├─ package\_spec.sql             → Package Bibliotheque (spec)
 
@@ -247,6 +247,7 @@ Mathieu PONNOU → MCD/Schéma + troncature des tables + tests (Procédure PL/SQ
 Amos CLEGBAZA → Procédure PL/SQL + triggers + README + création du package PL/SQL
 
 Meddy GARCIA → Documentation + statistiques de notation (SQL)
+
 
 
 
