@@ -59,11 +59,11 @@ Ce TP répond aux exigences du sujet :
 
 │   ├── mean\_note.sql                → Fonction moyenne des notes
 
-│   ├── trigger\_note\_moyenne.sql     → Trigger mise à jour automatique
+│   ├── trigger.sql                   → Trigger mise à jour automatique
 
-│   ├── test\_trigger.sql               → Script de test du trigger 
+│   ├── test\_trigger.sql             → Script de test du trigger 
 
-│   ├─ package\_spec.sql             → Package Bibliotheque (spec)
+│   ├─ package\_spec.sql              → Package Bibliotheque (spec)
 
 │   └── package\_body.sql             → Package Bibliotheque (body)
 
@@ -247,6 +247,7 @@ Mathieu PONNOU → MCD/Schéma + troncature des tables + tests (Procédure PL/SQ
 Amos CLEGBAZA → Procédure PL/SQL + triggers + README + création du package PL/SQL
 
 Meddy GARCIA → Documentation + statistiques de notation (SQL)
+
 
 
 
