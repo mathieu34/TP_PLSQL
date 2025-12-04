@@ -37,7 +37,7 @@ Ce TP répond aux exigences du sujet :
 
 ├── 📁 data/                
 
-│   ├── new_csv.csv                  →  CSV originaux filtrés (Books, Ratings, Users) pour avoir 100 lignes environ
+│   ├── new_csv.ipynb                  →  CSV originaux filtrés (Books, Ratings, Users) pour avoir 100 lignes environ
 
 │   ├── Books.xlsx                   → Dataset 
 
@@ -247,6 +247,7 @@ Mathieu PONNOU → MCD/Schéma + troncature des tables + tests (Procédure PL/SQ
 Amos CLEGBAZA → Schéma + Procédure PL/SQL + triggers + README + création du package PL/SQL
 
 Meddy GARCIA → Documentation + statistiques de notation (SQL)
+
 
 
 
