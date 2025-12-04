@@ -1,5 +1,5 @@
 CREATE OR REPLACE TRIGGER trg_update_note_moyenne
-AFTER INSERT OR UPDATE ON notation
+AFTER INSERT OR UPDATE ON ratings
 FOR EACH ROW
 DECLARE
     v_avg   NUMBER;
@@ -20,3 +20,4 @@ BEGIN
 END;
 
 /
+
