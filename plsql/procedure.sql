@@ -9,7 +9,7 @@ BEGIN
     SELECT AVG(book_rating),
            COUNT(*)
     INTO v_avg, v_count
-    FROM notation
+    FROM ratings
     WHERE isbn = :NEW.isbn;
 
     -- Mettre à jour la table LIVRE
@@ -20,4 +20,5 @@ BEGIN
 END;
 
 /
+
 
