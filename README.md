@@ -244,9 +244,10 @@ Il répond parfaitement au cahier des charges demandé.
 
 Mathieu PONNOU → MCD/Schéma + troncature des tables + tests (Procédure PL/SQL, trigger et fonctions) + création du package PL/SQL + README 
 
-Amos CLEGBAZA → Procédure PL/SQL + triggers + README + création du package PL/SQL
+Amos CLEGBAZA → Schéma + Procédure PL/SQL + triggers + README + création du package PL/SQL
 
 Meddy GARCIA → Documentation + statistiques de notation (SQL)
+
 
 
 
