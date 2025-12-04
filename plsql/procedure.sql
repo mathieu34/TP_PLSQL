@@ -1,7 +1,7 @@
 CREATE OR REPLACE PROCEDURE noter_livre (
-    p_id_adherent   IN NUMBER,
-    p_isbn          IN VARCHAR2,
-    p_book_rating   IN NUMBER
+    p_user_id      IN NUMBER,
+    p_isbn         IN VARCHAR2,
+    p_book_rating  IN NUMBER
 ) IS
     v_count NUMBER;
 BEGIN
@@ -10,11 +10,11 @@ BEGIN
     ------------------------------------------------------------------
     SELECT COUNT(*)
     INTO v_count
-    FROM adherent
-    WHERE id_adherent = p_id_adherent;
+    FROM users
+    WHERE user_id = p_user_id;
 
     IF v_count = 0 THEN
-        RAISE_APPLICATION_ERROR(-20010, 'Usager inexistant (id_adherent inconnu).');
+        RAISE_APPLICATION_ERROR(-20010, 'Usager inexistant (user_id inconnu).');
     END IF;
 
     ------------------------------------------------------------------
@@ -22,7 +22,7 @@ BEGIN
     ------------------------------------------------------------------
     SELECT COUNT(*)
     INTO v_count
-    FROM livre
+    FROM books
     WHERE isbn = p_isbn;
 
     IF v_count = 0 THEN
@@ -34,18 +34,19 @@ BEGIN
     ------------------------------------------------------------------
     MERGE INTO ratings r
     USING (
-        SELECT p_id_adherent AS id_adherent,
-               p_isbn        AS isbn,
-               p_book_rating AS book_rating
+        SELECT 
+            p_user_id     AS user_id,
+            p_isbn        AS isbn,
+            p_book_rating AS book_rating
         FROM dual
     ) src
-    ON (r.id_adherent = src.id_adherent AND r.isbn = src.isbn)
+    ON (r.user_id = src.user_id AND r.isbn = src.isbn)
     WHEN MATCHED THEN
-        UPDATE SET r.book_rating  = src.book_rating,
-                   r.date_notation = SYSDATE
+        UPDATE SET 
+            r.book_rating = src.book_rating
     WHEN NOT MATCHED THEN
-        INSERT (id_adherent, isbn, book_rating, date_notation)
-        VALUES (src.id_adherent, src.isbn, src.book_rating, SYSDATE);
+        INSERT (user_id, isbn, book_rating)
+        VALUES (src.user_id, src.isbn, src.book_rating);
 
 END noter_livre;
 /
